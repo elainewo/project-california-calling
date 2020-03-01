@@ -135,7 +135,6 @@ h1, h2, h3 {
     width: 100%;
     position: relative;
     padding-bottom: 5%;
-    /* height: 208vh; */
 }
 
 #stuckMiddle article {
@@ -392,4 +391,105 @@ h1, h2, h3 {
 
 .footer-img {
     margin-left: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    #home {
+        height: 85vh;
+    }
+    #home h1 {
+        line-height: 2rem;
+        font-size: 2rem;
+    }
+    #home div>img {
+        width: 13%;
+    }
+    #lastYear {
+        height: 75vh;
+        background: #000;
+        padding: 3% 0 15% 5%;
+    }
+    #lastYear p {
+        font-size: 3rem;
+        width: 90%;
+    }
+    #statistic {
+        height: 78vh;
+    }
+    #statistic div {
+        padding-left: 2%;
+        padding-top: 5%;
+    }
+    #statistic div p {
+        font-size: 5rem;
+        margin-bottom: 20%;
+    }
+    #statistic img {
+        display: none;
+    }
+    #statistic {
+        padding: 3% 0;
+    }
+    #statistic div h2 {
+        margin-top: 3%;
+    }
+    #stuckMiddle {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 5%;
+        padding-bottom: 0;
+    }
+    #stuckMiddle article {
+        width: 80%;
+        order: -1;
+    }
+    #stuckMiddle h2 {
+        font-size: 3rem;
+    }
+    #stuckMiddle img {
+        width: 100%;
+        margin: 0;
+    }
+    #stuckMiddle p {
+        order: -1;
+        width: 80%;
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+    .golden-container, .poppy-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 5%;
+    }
+    .golden-container div, .poppy-container div {
+        width: 95%;
+    }
+    .golden-container article, .poppy-container article {
+        width: 95%;
+    }
+    .golden-container div h2, .poppy-container div h2 {
+        margin-bottom: 4%;
+    }
+    .poppy-circle img {
+        width: 43%;
+        right: -15%;
+    }
+    .join-animation {
+        display: none;
+    }
+    #join-us {
+        padding-top: 15%;
+    }
+    #join-us article:nth-of-type(1) {
+        width: 100%;
+    }
+    #join-us article:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer-img {
+        margin-left: 0;
+        margin-top: 3%;
+        padding-bottom: 8%;
+    }
 }
